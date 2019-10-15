@@ -8,7 +8,7 @@ class DecadeSerializer(serializers.HyperlinkedModelSerializer):
 
 class FadSerializer(serializers.HyperlinkedModelSerializer):
     decade = serializers.HyperlinkedRelatedField(
-        view_name='start_year',
+        view_name='decade_detail',
         read_only=True
     )
     class Meta:
